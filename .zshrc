@@ -107,7 +107,19 @@ alias zshconfig="nvim ~/.zshrc"
 alias txconfig="nvim ~/.tmux.conf"
 
 alias cd_nvim="cd ~/.config/nvim"
-alias nv="nvim"
-alias tx="tmux"
+alias zshconfig="nvim ~/.zshrc"
+alias txconfig="nvim ~/.tmux.conf"
+
+alias cd_nvim="cd ~/.config/nvim"
+alias ac="vim ~/.config/alacritty/alacritty.toml"
+alias vim="nvim"
+alias xx="tmux"
+alias xxq="tmux kill-server"
+alias i3c="vim ~/.config/i3/config"
+alias sl="ls"
+
+bindkey '^a' autosuggest-accept
+setxkbmap -option "caps:escape_shifted_capslock"
+
 
 source /etc/zsh_command_not_found  
