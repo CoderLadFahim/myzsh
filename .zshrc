@@ -118,6 +118,11 @@ alias xxq="tmux kill-server"
 alias i3c="vim ~/.config/i3/config"
 alias sl="ls"
 
+ff() {
+    # cd $(find Documents/ Videos/ -type d -print | fzf)
+    cd $(find Documents/ Videos/ -type d -not \( -path "*/node_modules/*" -o -path "*/vendor/*" -o -path "*/.git/*" \) -print | fzf)
+}
+
 bindkey '^a' autosuggest-accept
 setxkbmap -option "caps:escape_shifted_capslock"
 
